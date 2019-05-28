@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Producto</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<div class="container-fluid navbar-inverse bg-success fixed-top"><!-- navbar -->	
+<nav class="navbar navbar-expand-lg container">
+	<a class="navbar-brand text-white" href="#">LogoCorporativo</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		 <span class="navbar-toggler-icon"><i class="fas fa-bars text-white"></i></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   	 <ul class="navbar-nav ml-auto">
+         <li class="nav-item active">
+           <a class="nav-link text-white" href="principal.php">Inicio <span class="sr-only">(current)</span></a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link text-white" href="servicios.php">Pago Servicios</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link text-white" href="depositos.html">Depositos</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link text-white" href="transferencias.html">Transferencias entre Cuentas</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link text-white" href="saldo.html">Saldo</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link text-white" href="historico.html">Histórico de Transacciones</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link text-white" href="#" onclick="CerrarSesion();">Cerrar Sesión</a>
+         </li>
+       </ul>
+   	  </div>
+</nav>
+</div><!-- navbar -->
+	<div class="container-fluid bg-fondo-claro">		
+   	   <div class="container py-5 ">
+   	   	<div class="text-center">
+   	   		<h2 class="py-4">Pago Servicios</h2>
+   	   	</div>
+   	   	<div class="row justify-content-center">
+   	   		<div class="form-group col-md-8 col-md-offset-4">
+                  <select name="servicio" id="servicio" class="form-control" required>
+                     <option value="">Seleccione Servicio</option>
+                     <option value="Agua">Agua</option>
+                     <option value="Luz">Luz</option>
+                     <option value="Internet">Internet</option>
+                  </select>
+               </div>
+   	   		<div class="form-group col-md-8 col-md-offset-4">
+                  <select name="cuenta" id="cuenta" class="form-control" required>
+                     <option value="">Seleccione la Cuenta</option>
+                  </select>
+               </div>
+               <div class="form-group col-md-8 col-md-offset-4">
+                  <input type="number" placeholder="Cantidad a Pagar" name="cantidad" id="cantidad" class="form-control" required>  
+               </div>
+   	   	</div>	
+   	   		<div class="col-md-12 py-3">
+   	   			<div class="row justify-content-center">
+   	   				<button class="btn btn-primary col-md-2" name="guarda" id="guarda" onClick="guardar();">Pagar</button>&nbsp;&nbsp;&nbsp;&nbsp;
+   	   				<button class="btn btn-primary col-md-2" name="cancelar" id="cancelar" onClick="cancelar();">Cancelar</button>
+   	   			</div>
+   	   		</div>
+   	   	
+   	   </div>
+   	   </div>
+   <footer class="container-fluid bg-negro text-center text-white py-5 mt-5">
+   	   	Sitio wed desarrollado por nosotros mismos
+   </footer>
+    <script src="js/productos.js" type="text/javascript"></script>
+   <script src="js/AjaxRequest.js" type="text/javascript"></script>	
+</body>
+</html>

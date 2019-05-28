@@ -1,0 +1,45 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #444;
+}
+h1, h2,h3, h4, h5, h6, p{
+	font-family: 'Roboto', sans-serif;
+}
+h1{
+	font-size: 40px;
+	font-weight: 300;
+}
+.h1{
+	font-weight: 300;
+}
+h2{
+	font-size: 32px;
+	font-weight: 300;
+}
+h3{
+	font-size: 28px;
+	font-weight: 300;
+}
+h4{
+	font-size: 24px;
+	font-weight: 400;
+}
+p{
+   font-weight: 300;	
+}
+.fondo{
+		background: url('../img/meadows-4210041_1920.JPG');
+		height: 100vh;
+		background-position: center;
+		background-size: cover;
+	}
+.fondo-2{
+		background-color: rgba(0, 0, 0, .5);
+		height: 100vh;
+	}
+.bg-gris{
+	background-color: #57876A;
+}
+.bg-negro{
+	background-color: #0B1313;
+}
