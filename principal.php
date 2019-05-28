@@ -17,7 +17,7 @@
 	
 </head>
 <body>
-	<div class="container-fluid navbar-inverse bg-success fixed-top"><!-- navbar -->	
+	<div class="container-fluid navbar-inverse bg-primary fixed-top"><!-- navbar -->	
 <nav class="navbar navbar-expand-lg container">
 	<a class="navbar-brand text-white" href="#">LogoCorporativo</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
